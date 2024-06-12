@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD-MicroService", "DDD-MicroService.csproj", "{4D4DDB71-0E03-41E3-843B-3B6037FBA254}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D4DDB71-0E03-41E3-843B-3B6037FBA254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D4DDB71-0E03-41E3-843B-3B6037FBA254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D4DDB71-0E03-41E3-843B-3B6037FBA254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D4DDB71-0E03-41E3-843B-3B6037FBA254}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14EE4996-CC5E-4A61-86D9-84A457343CC1}
+	EndGlobalSection
+EndGlobal
