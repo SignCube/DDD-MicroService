@@ -1,13 +1,13 @@
-﻿using MediatR;
+﻿using IDP.Domain.Entities.BaseEntities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IDP.Application.Command.User
+namespace IDP.Domain.Entities
 {
-    public record UserCommand : IRequest<bool>
+    public class User:BaseEntity
     {
         public required string FullName { get; set; }
         public required string CodeNumber { get; set; }
