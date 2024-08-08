@@ -7,8 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace IDP.Api.Controllers.V1
 {
-    [Route("api/v1/[controller]")]
+    [Route("api/v{v:ApiVersion}/[controller]")]
     [ApiController]
+    [ApiVersion(1)]
     [ApiVersion(2)]
     public class UserController : IBaseController
     {
@@ -17,7 +18,7 @@ namespace IDP.Api.Controllers.V1
         {
             _mediator = mediator;
         }
-        [MapToApiVersion(1)]
+        
         [HttpPost("Insert")]
         public async Task<IActionResult> Insert([FromBody] UserCommand userCommand)
         {

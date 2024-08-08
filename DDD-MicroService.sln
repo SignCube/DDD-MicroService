@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IDP.Ioc", "Src\Services\IDP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IDP.UnitTest", "Src\Services\IDPService\IDP.UnitTest\IDP.UnitTest.csproj", "{67313EBE-68EC-48F9-9AAB-A500FE5D944A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth", "Src\Common\Auth\Auth.csproj", "{A09C5A54-288B-41AD-A8D8-6E9789C241D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{67313EBE-68EC-48F9-9AAB-A500FE5D944A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67313EBE-68EC-48F9-9AAB-A500FE5D944A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67313EBE-68EC-48F9-9AAB-A500FE5D944A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A09C5A54-288B-41AD-A8D8-6E9789C241D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A09C5A54-288B-41AD-A8D8-6E9789C241D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A09C5A54-288B-41AD-A8D8-6E9789C241D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A09C5A54-288B-41AD-A8D8-6E9789C241D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +91,7 @@ Global
 		{AD64EA90-9D13-48ED-B2D8-3F9DDF582D5E} = {6AE74F56-76D4-4CF0-A561-5C11BBDE28DB}
 		{64BFB6E5-3B49-4E02-9CED-81DD88976AA7} = {6AE74F56-76D4-4CF0-A561-5C11BBDE28DB}
 		{67313EBE-68EC-48F9-9AAB-A500FE5D944A} = {6AE74F56-76D4-4CF0-A561-5C11BBDE28DB}
+		{A09C5A54-288B-41AD-A8D8-6E9789C241D7} = {B38D7179-8FF9-4800-B86F-8F28BB90990B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {14EE4996-CC5E-4A61-86D9-84A457343CC1}
