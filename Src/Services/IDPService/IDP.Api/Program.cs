@@ -13,21 +13,20 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMediatR(typeof(UserHandler).GetTypeInfo().Assembly);
 
-builder.Services.AddApiVersioning(opt =>
+builder.Services.AddApiVersioning(options =>
 {
-    opt.DefaultApiVersion = new Asp.Versioning.ApiVersion(1);
-    opt.ReportApiVersions = true;
-    opt.AssumeDefaultVersionWhenUnspecified = true;
-    opt.ApiVersionReader = ApiVersionReader.Combine(
-
-        new UrlSegmentApiVersionReader(),
-        new HeaderApiVersionReader("X-Api-Version"));
-}).AddApiExplorer(opt =>
+	options.DefaultApiVersion = new ApiVersion(1);
+	options.ReportApiVersions = true;
+	options.AssumeDefaultVersionWhenUnspecified = true;
+	options.ApiVersionReader = ApiVersionReader.Combine(
+		new UrlSegmentApiVersionReader(),
+		new HeaderApiVersionReader("X-Api-Version"));
+}).AddApiExplorer(options =>
 {
-    opt.GroupNameFormat = "'v'V";
-    opt.SubstituteApiVersionInUrl = true;
-
+	options.GroupNameFormat = "'v'V";
+	options.SubstituteApiVersionInUrl = true;
 });
+
 
 var app = builder.Build();
 
